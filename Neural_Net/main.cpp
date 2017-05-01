@@ -183,7 +183,7 @@ Neural_Net::Neural_Net(const vector<unsigned> &topology) {
     for (unsigned layerNum = 0; layerNum < numLayers; ++layerNum) {
     // create a layer and add it to m_layer
         m_layers.push_back(Layer());
-        unsigned numOutputs = layerNum == topology.size() - 1 ? 0 : topology[layerNum + 1];
+        unsigned numOutputs = layerNum == topology.size() - 1 ? 0 : topology[layerNum +  1];
         // may be different (input, output layers have different number of neurons compared to hidden)
         // first condition - if output layer
         
